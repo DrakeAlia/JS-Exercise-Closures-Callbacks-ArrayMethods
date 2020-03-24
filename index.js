@@ -159,8 +159,11 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * 
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function lowerCaseStrings() {
-  
+function lowerCaseStrings(strings) {
+  const lowerCase = [];
+  strings.forEach(function(item)){
+    return lowerCase.push(strings.toLowerCase());
+  }
 }
 
 /**
