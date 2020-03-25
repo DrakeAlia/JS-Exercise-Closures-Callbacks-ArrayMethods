@@ -88,11 +88,8 @@ function processLastItem(stringList, callback) {
  * [2] Invoking `processSum` passing `-5`, '-1', and `(num) => num + 1000`,
  * should return 994.
 */
-function processSum(numberList, callback) {
-  const sum = numberList.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue;
-  }, 0);
-  return callback(sum);
+function processSum(num1, num2, callback) {
+  return callback(num1 + num2);
 }
 
 /**
@@ -192,7 +189,7 @@ function isItAnApple(strings) {
     if(item === "apple") {
       return true; } 
       else {
-        false;
+       return false;
       }
   }));
 }
