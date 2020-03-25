@@ -229,8 +229,8 @@ function removeApple(strings) {
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
 function stringSmash(strings) {
-  return strings.reduce((fruit, touch) => {
-    return fruit + touch;
+  return strings.reduce((fruit, abc) => {
+    return fruit + abc;
   });
 }
 
@@ -269,8 +269,11 @@ function getFullNames(runners) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps() {
-  
+function firstNamesAllCaps(runners) {
+  const upperName = runners.map(function(item) {
+    return item.first_name.toUpperCase();
+  });
+  return upperName;
 }
 
 /**
@@ -287,7 +290,7 @@ function firstNamesAllCaps() {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize() {
+function getRunnersByTShirtSize(runners, tShirtSize) {
   
 }
 
@@ -302,7 +305,7 @@ function getRunnersByTShirtSize() {
  * @param runners array of runners like the one inside the /data/runners.js file.
  * @returns a number which is the sum of the donations by all runners.
 */
-function tallyUpDonations() {
+function tallyUpDonations(runners) {
   
 }
 
