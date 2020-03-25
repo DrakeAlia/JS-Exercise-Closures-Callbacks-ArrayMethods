@@ -165,11 +165,12 @@ function processDuplicateFree(list, callback) {
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
 function lowerCaseStrings(strings) {
-  const lowerCase = [];
-  strings.forEach(function(item)){
-    return lowerCase.push(strings.toLowerCase());
+  const lower = [];
+  strings.forEach((item) => {
+    lower.push(item.toLowerCase())
+  });
+  return lower;
   }
-}
 
 /**
  * ### Challenge `isItAnApple`
@@ -193,7 +194,7 @@ function isItAnApple(strings) {
       else {
         false;
       }
-  })):
+  }));
 }
 
 /**
