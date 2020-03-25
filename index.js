@@ -136,8 +136,8 @@ function processProduct(num1, num2, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree() {
+  
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
@@ -209,7 +209,7 @@ function isItAnApple(strings) {
 */
 function removeApple(strings) {
   return strings.filter((fruits) => {
-    return (fruit !== "apple")
+    return (fruits !== "apple")
   });
 }
 
@@ -309,7 +309,10 @@ function getRunnersByTShirtSize(runners, tShirtSize) {
  * @returns a number which is the sum of the donations by all runners.
 */
 function tallyUpDonations(runners) {
-  
+  const totalDonations = runners.reduce(function(totalAmount, currentValue) {
+    return totalAmount + currentValue.donation;
+  }, 0);
+  return totalDonations;
 }
 
 /////////////// CLOSURES ///////////////
